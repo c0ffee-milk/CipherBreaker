@@ -46,13 +46,13 @@ q w e r t y u i o p a s d f g h j k l z x c v b n m
 
 2. 由1得，结点两侧字母断绝交换可能，若某一字母的正确位置恰好在结点另一侧则永远不可能恢复。  
 
- ![image-20240709121828213](C:\Users\coffee\AppData\Roaming\Typora\typora-user-images\image-20240709121828213.png)
+![picture1](./README.assets/picture1.png)
 
 为了解决以上两个问题，利用频率分析（图1）可知r与d的频率差距较为明显，通过较小规模的密文样本即可将r及之前的字母与d及之后的字母区分。因此，将r作为染色体中的结点。为了实现此算法，首先对密文进行频率分析得到“祖先”，由“祖先”变异得到第一个种群，然后开始遗传算法直到指定代数。每生成一代记录该代最佳个体并比较得到全局最佳个体，最后用全局最佳个体为密文解密。  
 
-### 2.2 流程设计  
+### 2.2 流程设计
 
-![image-20240709121113902](C:\Users\coffee\AppData\Roaming\Typora\typora-user-images\image-20240709121113902.png)
+![picture2](./README.assets/picture2.png)
 
 ### 2.3 核心代码解读  
 
