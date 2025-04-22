@@ -6,7 +6,7 @@
 
 [English Version](#english-version) | 中文版
 
-> 利用频率分析与遗传算法破解简单替换密码
+> 利用频率分析与遗传算法破解单表替换密码
 
 ## 📋 目录
 
@@ -172,7 +172,7 @@ CipherBreaker/
 
 # CipherBreaker - Breaking Single Table Substitution Ciphers with Genetic Algorithms
 
-> Using frequency analysis and genetic algorithms to break simple substitution ciphers
+> Using frequency analysis and genetic algorithms to break single table substitution ciphers
 
 ## Table of Contents
 
