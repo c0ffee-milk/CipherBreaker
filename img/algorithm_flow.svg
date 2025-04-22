@@ -1,0 +1,122 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa" />
+    
+    <!-- 标题 -->
+    <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">单表替换密码破解算法流程</text>
+    
+    <!-- 初始化阶段 -->
+    <rect x="50" y="60" width="700" height="120" rx="10" fill="#d4edc9" fill-opacity="0.3" stroke="#74c476" />
+    <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">初始化阶段</text>
+    
+    <!-- 初始化步骤 -->
+    <rect x="100" y="100" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="160" y="125" font-family="Arial" font-size="12" text-anchor="middle">读取密文与样本</text>
+    
+    <rect x="270" y="100" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="330" y="125" font-family="Arial" font-size="12" text-anchor="middle">统计字母频率</text>
+    
+    <rect x="440" y="100" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="500" y="125" font-family="Arial" font-size="12" text-anchor="middle">创建祖先个体</text>
+    
+    <rect x="610" y="100" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="670" y="125" font-family="Arial" font-size="12" text-anchor="middle">生成初始种群</text>
+    
+    <!-- 初始化箭头 -->
+    <line x1="220" y1="120" x2="270" y2="120" stroke="#333" stroke-width="1.5" />
+    <polygon points="270,120 265,116 265,124" fill="#333" />
+    
+    <line x1="390" y1="120" x2="440" y2="120" stroke="#333" stroke-width="1.5" />
+    <polygon points="440,120 435,116 435,124" fill="#333" />
+    
+    <line x1="560" y1="120" x2="610" y2="120" stroke="#333" stroke-width="1.5" />
+    <polygon points="610,120 605,116 605,124" fill="#333" />
+    
+    <!-- 遗传算法迭代阶段 -->
+    <rect x="50" y="200" width="700" height="240" rx="10" fill="#f2d2d2" fill-opacity="0.3" stroke="#e78ac3" />
+    <text x="400" y="220" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">遗传算法迭代</text>
+    
+    <!-- 遗传算法步骤 -->
+    <rect x="160" y="250" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="220" y="275" font-family="Arial" font-size="12" text-anchor="middle">计算适应度</text>
+    
+    <rect x="160" y="310" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="220" y="335" font-family="Arial" font-size="12" text-anchor="middle">选择最佳个体</text>
+    
+    <rect x="160" y="370" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="220" y="395" font-family="Arial" font-size="12" text-anchor="middle">保存最佳个体</text>
+    
+    <polygon points="400,340 425,370 400,400 375,370" fill="#fdae6b" stroke="#e6550d" />
+    <text x="400" y="375" font-family="Arial" font-size="12" text-anchor="middle">终止?</text>
+    
+    <rect x="530" y="270" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="590" y="295" font-family="Arial" font-size="12" text-anchor="middle">父母选择</text>
+    
+    <rect x="530" y="330" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="590" y="355" font-family="Arial" font-size="12" text-anchor="middle">交叉操作</text>
+    
+    <rect x="530" y="390" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="590" y="415" font-family="Arial" font-size="12" text-anchor="middle">变异操作</text>
+    
+    <!-- 遗传算法箭头 -->
+    <line x1="670" y1="140" x2="670" y2="170" stroke="#333" stroke-width="1.5" />
+    <line x1="670" y1="170" x2="220" y2="170" stroke="#333" stroke-width="1.5" />
+    <line x1="220" y1="170" x2="220" y2="250" stroke="#333" stroke-width="1.5" />
+    <polygon points="220,250 216,245 224,245" fill="#333" />
+    
+    <line x1="220" y1="290" x2="220" y2="310" stroke="#333" stroke-width="1.5" />
+    <polygon points="220,310 216,305 224,305" fill="#333" />
+    
+    <line x1="220" y1="350" x2="220" y2="370" stroke="#333" stroke-width="1.5" />
+    <polygon points="220,370 216,365 224,365" fill="#333" />
+    
+    <line x1="220" y1="410" x2="220" y2="430" stroke="#333" stroke-width="1.5" />
+    <line x1="220" y1="430" x2="670" y2="430" stroke="#333" stroke-width="1.5" />
+    <line x1="670" y1="430" x2="670" y2="170" stroke="#333" stroke-width="1.5" />
+    
+    <line x1="280" y1="370" x2="375" y2="370" stroke="#333" stroke-width="1.5" />
+    <polygon points="375,370 370,366 370,374" fill="#333" />
+    
+    <line x1="425" y1="370" x2="530" y2="370" stroke="#333" stroke-width="1.5" />
+    <polygon points="530,370 525,366 525,374" fill="#333" />
+    <text x="470" y="365" font-family="Arial" font-size="12" text-anchor="middle">否</text>
+    
+    <line x1="590" y1="310" x2="590" y2="330" stroke="#333" stroke-width="1.5" />
+    <polygon points="590,330 586,325 594,325" fill="#333" />
+    
+    <line x1="590" y1="370" x2="590" y2="390" stroke="#333" stroke-width="1.5" />
+    <polygon points="590,390 586,385 594,385" fill="#333" />
+    
+    <!-- 解密阶段 -->
+    <rect x="50" y="460" width="700" height="120" rx="10" fill="#dadaeb" fill-opacity="0.3" stroke="#9e9ac8" />
+    <text x="400" y="480" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">解密阶段</text>
+    
+    <line x1="400" y1="400" x2="400" y2="500" stroke="#333" stroke-width="1.5" />
+    <polygon points="400,500 396,495 404,495" fill="#333" />
+    <text x="410" y="450" font-family="Arial" font-size="12" text-anchor="middle">是</text>
+    
+    <!-- 解密步骤 -->
+    <rect x="270" y="500" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="330" y="525" font-family="Arial" font-size="12" text-anchor="middle">选择全局最佳个体</text>
+    
+    <rect x="440" y="500" width="120" height="40" rx="5" fill="#c4e3f3" stroke="#6baed6" />
+    <text x="500" y="525" font-family="Arial" font-size="12" text-anchor="middle">解密密文</text>
+    
+    <ellipse cx="620" cy="520" rx="40" ry="25" fill="#dadaeb" stroke="#9e9ac8" />
+    <text x="620" y="525" font-family="Arial" font-size="12" text-anchor="middle">结束</text>
+    
+    <!-- 解密箭头 -->
+    <line x1="390" y1="520" x2="440" y2="520" stroke="#333" stroke-width="1.5" />
+    <polygon points="440,520 435,516 435,524" fill="#333" />
+    
+    <line x1="560" y1="520" x2="580" y2="520" stroke="#333" stroke-width="1.5" />
+    <polygon points="580,520 575,516 575,524" fill="#333" />
+    
+    <!-- 算法关键点说明 -->
+    <rect x="660" y="480" width="120" height="100" rx="5" fill="#fde0dd" stroke="#e78ac3" stroke-dasharray="5,5" />
+    <text x="720" y="500" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">算法关键点</text>
+    <text x="720" y="520" font-family="Arial" font-size="9" text-anchor="middle">r作为染色体结点</text>
+    <text x="720" y="535" font-family="Arial" font-size="9" text-anchor="middle">词典匹配率评估</text>
+    <text x="720" y="550" font-family="Arial" font-size="9" text-anchor="middle">轮盘赌选择策略</text>
+    <text x="720" y="565" font-family="Arial" font-size="9" text-anchor="middle">相邻位置变异</text>
+</svg> 

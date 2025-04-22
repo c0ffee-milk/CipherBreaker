@@ -1,0 +1,49 @@
+```mermaid
+flowchart TD
+    subgraph init["初始化阶段"]
+        A[开始] --> B[读取密文与样本文本]
+        B --> C[统计密文字母频率]
+        C --> D[创建祖先个体]
+        D --> E[变异祖先生成初始种群]
+    end
+    
+    subgraph ga["遗传算法迭代"]
+        E --> F[计算种群中所有个体适应度]
+        F --> G[选择种群中最佳个体]
+        G --> H[保存当前代最佳个体]
+        H --> I{达到终止条件?}
+        I -->|否| J[轮盘赌选择父母个体]
+        J --> K[交叉操作生成子代]
+        K --> L[变异操作]
+        L --> M[生成新一代种群]
+        M --> F
+    end
+    
+    subgraph decode["解密阶段"]
+        I -->|是| N[选择全局最佳个体]
+        N --> O[使用最佳个体密钥解密]
+        O --> P[输出解密结果]
+        P --> Q[结束]
+    end
+    
+    %% 关键算法说明
+    subgraph key_points["算法关键点"]
+        R["结点策略: r作为染色体结点,\n防止字母跨区域交叉"]
+        S["适应度函数: 解密后词典\n匹配率决定个体优劣"]
+        T["变异操作: 随机交换\n相邻位置字母"]
+        U["交叉操作: 结合父母\n不同区域染色体"]
+    end
+    
+    %% 风格设置
+    classDef process fill:#c4e3f3,stroke:#6baed6,stroke-width:2px,color:black;
+    classDef decision fill:#fdae6b,stroke:#e6550d,stroke-width:2px,color:black;
+    classDef start fill:#d4edc9,stroke:#74c476,stroke-width:2px,color:black;
+    classDef end fill:#dadaeb,stroke:#9e9ac8,stroke-width:2px,color:black;
+    classDef note fill:#fde0dd,stroke:#e78ac3,stroke-width:2px,color:black;
+    
+    class A,B,C,D,E,F,G,H,J,K,L,M,N,O,P process;
+    class I decision;
+    class A start;
+    class Q end;
+    class R,S,T,U note;
+``` 
